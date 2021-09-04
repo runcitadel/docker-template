@@ -46,5 +46,5 @@ jobs:
                 --cache-to "type=local,dest=/tmp/.buildx-cache" \
                 --platform linux/amd64,linux/arm64 \
                 --build-arg VERSION=$TAG \
-                --tag ${{ secrets.DOCKER_CONTAINER_USERNAME }}/$IMAGE_NAME:$BRANCH \
+                --tag ${{ secrets.DOCKER_CONTAINER_USERNAME }}/$IMAGE_NAME:$TAG \
                 --output "type=registry" ./
