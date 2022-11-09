@@ -7,7 +7,7 @@ FINAL_NAME="${IMAGE_NAME}:${VERSION}"
 MANIFEST_NAME="${FINAL_NAME}"
 
 
-declare -a architectures=("amd64" "arm64" "riscv64")
+declare -a architectures=("amd64" "arm64")
 
 for architecture in "${architectures[@]}"; do
   echo "Pulling ${VERSION} for ${architecture}..."
